@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e9e4df">
+  <title>Un detalle para ti Marce ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="loading-screen" id="loadingScreen">
+    <div class="loading-inner">
+      <h1>Marcela</h1>
+      <p id="loadingText">Toca el corazón ❤️</p>
+
+      <button class="loading-heart" id="startBtn" aria-label="Tocar corazón">
+        <span>♥</span>
+      </button>
+
+      <div class="loader">
+        <div class="loader-fill" id="loaderFill"></div>
+      </div>
+
+      <span class="percent" id="percent">0%</span>
+      <p class="tap-note" id="tapNote">5 toques para continuar</p>
+    </div>
+  </section>
+
+  <main class="site" id="site" aria-hidden="true">
+    <div class="top-progress" id="topProgress"></div>
+
+    <section class="page intro-page">
+      <div class="page-content">
+        <p class="kicker">POR UNA FECHA ESPECIAL</p>
+        <h2>Por el cumpleaños<br>de mi <em>persona favorita</em></h2>
+        <p class="date">31 de Agosto</p>
+
+        <div class="polaroid main-photo">
+          <img src="assets/foto1.JPG" alt="Recuerdo" onerror="showFallback(this)">
+          <div class="img-fallback">Agrega<br><b>foto1.JPG</b></div>
+          <div class="polaroid-decoration">✶ <span>♡ ♡ ♡</span> ✶</div>
+        </div>
+
+        <div class="tiny-wave">〰</div>
+
+        <button class="seal-card" id="openMessage" aria-label="Abrir el mensaje">
+          <span class="seal">❤️</span>
+          <small>Toca para abrir</small>
+        </button>
+
+        <p class="made">HECHO CON AMOR</p>
+      </div>
+    </section>
+
+    <section class="page letter-page" id="messageSection">
+      <div class="confetti" id="confetti"></div>
+
+      <article class="letter-card">
+        <div class="letter-inner">
+          <p class="letter-kicker">PARA MARCE ❤️</p>
+          <p>A veces las palabras no alcanzan para explicar lo que una persona
+              significa.<br>Por eso hice este pequeño espacio, para guardar algunos
+              recuerdos y decirte algo que quizá ya sabes, pero que nunca está
+            de más repetir.<br><strong>Estoy orgulloso de ti, Te Quiero ❤️</strong></p>
+          <p>Gracias por cada momento, por las risas, por las conversaciones
+              y por todas esas pequeñas cosas que terminan convirtiéndose en
+              grandes recuerdos, y tu forma de hacerme sentir en casa.<br><strong>Feliz Cumpleaños ❤️</strong></p>
+
+          <div class="letter-highlight">Que la vida te siga mostrando<br>que no hay nada más<br><strong>especial que tú.</strong>
+          </div>
+          <p class="letter-kicker">Sebas 😜</p>
+        </div>
+      </article>
+    </section>
+
+    <section class="page memory-page">
+      <div class="memory-wrap">
+        <div class="polaroid second-photo">
+          <img src="assets/foto2.JPG" alt="Otro recuerdo" onerror="showFallback(this)">
+          <div class="img-fallback">Agrega<br><b>foto2.JPG</b></div>
+          <div class="polaroid-decoration">✶ <span>♡ ♡ ♡</span> ✶</div>
+        </div>
+
+        <div class="tiny-wave">〰</div>
+
+        <div class="mini-polaroid">
+          <img src="assets/foto3.JPG" alt="Recuerdo" onerror="showFallback(this)">
+          <div class="img-fallback">Agrega foto3.JPG</div>
+        </div>
+
+        <p class="memory-caption">Espero que hayas tenido un lindo y feliz<br><em>Cumpleaños.</em></p>
+      </div>
+    </section>
+
+    <section class="page final-page">
+      <div class="final-content">
+        <div class="final-photo">
+          <img src="assets/foto-final.JPG" alt="Foto final" onerror="showFallback(this)">
+          <div class="img-fallback">Agrega<br><b>foto-final.JPG</b></div>
+        </div>
+
+        <p class="kicker">GRACIAS POR COMPARTIR</p>
+        <h2>tu vida<br><em>conmigo</em></h2>
+        <p class="final-text">Por favor mira debajo del asiento.</p>
+
+        <button class="again" id="againBtn">Volver a verlo ♥</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
